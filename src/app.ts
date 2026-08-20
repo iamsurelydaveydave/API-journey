@@ -17,6 +17,10 @@ export function createApp(): Express {
     res.json({ message: 'Hello, World!' });
   });
 
+  app.get('/pogi', (_req: Request, res: Response) => {
+    res.json({ message: 'John the weekend!' });
+  });
+
   app.use((_req: Request, res: Response) => {
     res.status(404).json({ error: 'Not Found' });
   });
