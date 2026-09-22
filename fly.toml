@@ -1,10 +1,10 @@
-# fly.toml app configuration file generated for api-journey on 2026-09-22T19:57:05Z
+# fly.toml app configuration file generated for api-journey on 2026-09-22T20:15:13Z
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
 app = 'api-journey'
-primary_region = 'sin'
+primary_region = 'ams'
 
 [build]
 
