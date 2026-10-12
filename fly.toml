@@ -1,15 +1,11 @@
-# fly.toml app configuration file generated for api-journey on 2026-09-22T21:00:10Z
-#
-# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
-#
-
+# fly.toml
 app = 'api-journey'
-primary_region = 'ams'
+primary_region = 'sin'
 
 [build]
 
 [http_service]
-  internal_port = 8080
+  internal_port = 8080          # keep this
   force_https = true
   auto_stop_machines = 'stop'
   auto_start_machines = true
@@ -17,7 +13,6 @@ primary_region = 'ams'
   processes = ['app']
 
 [[vm]]
-  memory = '1gb'
+  memory = '256mb'              # clean up the conflicting memory lines
   cpu_kind = 'shared'
   cpus = 1
-  memory_mb = 256
